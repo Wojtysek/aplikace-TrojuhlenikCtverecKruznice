@@ -5,7 +5,7 @@ int main(void) {
 
 	printf("vloz operaci: \n");
 	printf("1) trojuhelnik\n");
-	printf("2) ctvrerec\n");
+	printf("2) ctverec\n");
 	printf("3) kruznice\n");
 	scanf("%d", &vstup);
 
@@ -18,17 +18,18 @@ int main(void) {
 		printf("zadej stranu c: ");
 		scanf("%d", &c);
 		if (a + b > c && a + c > b && c + b > a) {
-			printf("tento trojuhelnik existuje");
+			printf("tento trojuhelnik existuje\n");
+			int max = a;
+			if (b > max) {
+				max = b;
+			}
+			if (c > max) {
+				max = c;
+			}
+			printf("obvod: %d\n", a + b + c);
 		}
 		else {
-			printf("tento trojuhelnik neexituje");
-		}
-		int max = a;
-		if (b > max) {
-			max = b;
-		}
-		if (c > max) {
-			max = c;
+			printf("tento trojuhelnik neexituje\n");
 		}
 	}
 	else if (vstup == 2) {
@@ -44,7 +45,7 @@ int main(void) {
 			printf("je to obdelnik\n");
 		}
 		printf("obvod: %d\n", 2 * a + 2 * b);
-		printf("obvod: %d\n", a * b);
+		printf("obsah: %d\n", a * b);
 	}
 	else {
 			//kruznice
