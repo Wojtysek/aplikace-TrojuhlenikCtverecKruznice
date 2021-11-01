@@ -23,7 +23,13 @@ int main(void) {
 		else {
 			printf("tento trojuhelnik neexituje");
 		}
-		if 
+		int max = a;
+		if (b > max) {
+			max = b;
+		}
+		if (c > max) {
+			max = c;
+		}
 	}
 	else if (vstup == 2) {
 		//ctverec
