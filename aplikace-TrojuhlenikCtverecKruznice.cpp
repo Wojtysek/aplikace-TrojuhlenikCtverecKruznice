@@ -8,6 +8,7 @@ int main(void) {
 	printf("2) ctverec\n");
 	printf("3) kruznice\n");
 	scanf("%d", &vstup);
+	system("cls");
 
 	if (vstup == 1) {
 		//trojuhelnik 
@@ -17,6 +18,8 @@ int main(void) {
 		scanf("%d", &b);
 		printf("zadej stranu c: ");
 		scanf("%d", &c);
+		system("cls");
+
 		if (a + b > c && a + c > b && c + b > a) {
 			printf("tento trojuhelnik existuje\n");
 			int max = a;
@@ -33,11 +36,13 @@ int main(void) {
 		}
 	}
 	else if (vstup == 2) {
-		//ctverec
+		//obdelnik
 		printf("zadej stranu a: ");
 		scanf("%d", &a);
 		printf("zadej stranu b: ");
 		scanf("%d", &b);
+		system("cls");
+
 		if (a == b) {
 			printf("je to ctverec\n");
 		}
@@ -51,6 +56,7 @@ int main(void) {
 			//kruznice
 		printf("zadej polomer kruznice: ");
 		scanf("%d", &r);
+		system("cls");
 		printf("obvod: %f\n", 3.14 * 2 * r);
 		printf("obsah: %f\n", 3.14 * r * r);
 	}
