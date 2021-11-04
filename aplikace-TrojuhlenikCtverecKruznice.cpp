@@ -5,7 +5,7 @@ int main(void) {
 
 	printf("vloz operaci: \n");
 	printf("1) trojuhelnik\n");
-	printf("2) ctverec\n");
+	printf("2) obdelnik\n");
 	printf("3) kruznice\n");
 	scanf("%d", &vstup);
 	system("cls");
@@ -32,7 +32,7 @@ int main(void) {
 			printf("obvod: %d\n", a + b + c);
 		}
 		else {
-			printf("tento trojuhelnik neexituje\n");
+			printf("tento trojuhelnik neexistuje\n");
 		}
 	}
 	else if (vstup == 2) {
